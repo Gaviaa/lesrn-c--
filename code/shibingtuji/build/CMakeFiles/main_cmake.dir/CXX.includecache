@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Gun.h
+string
+-
+
+../include/Soldier.h
+string
+-
+Gun.h
+../include/Gun.h
+
+/home/gavia/code/shibingtuji/main.cpp
+Soldier.h
+/home/gavia/code/shibingtuji/Soldier.h
+Gun.h
+/home/gavia/code/shibingtuji/Gun.h
+iostream
+-
+

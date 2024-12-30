@@ -1,0 +1,3 @@
+/home/gavia/code/shibingtuji/build/CMakeFiles/rebuild_cache.dir
+/home/gavia/code/shibingtuji/build/CMakeFiles/edit_cache.dir
+/home/gavia/code/shibingtuji/build/CMakeFiles/main_cmake.dir

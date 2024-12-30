@@ -1,0 +1,3 @@
+/home/gavia/code/zihanshu/build/CMakeFiles/rebuild_cache.dir
+/home/gavia/code/zihanshu/build/CMakeFiles/edit_cache.dir
+/home/gavia/code/zihanshu/build/CMakeFiles/main_cmake.dir
