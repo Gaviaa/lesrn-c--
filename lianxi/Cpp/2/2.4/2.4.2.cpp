@@ -22,6 +22,7 @@ void test()
     {
         cout<<"除数不能为0"<<endl;
     }
+
 }
 
 int main()
