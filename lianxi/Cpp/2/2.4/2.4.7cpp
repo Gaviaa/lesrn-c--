@@ -1,0 +1,54 @@
+//系统提供的标准异常
+
+#include <iostream>
+#include <exception>//标准异常头文件,新版本的编译器不需要引入这个头文件
+using namespace std;
+#include <string.h>
+
+//定义自己的异常类
+class MyOut_of:public exception
+{
+    public:
+        MyOut_of(const char *errorinfo)
+        {
+            this->m_Info=string(errorinfo);
+        }
+        MyOut_of(const string errorinfo)
+        {
+            this->m_Info=errorinfo;
+        }
+        const char * what() const noexcept
+        {
+            return this->m_Info.c_str();
+        }
+   public:
+        string m_Info;
+};
+class Maker
+{
+    public:
+        Maker(int age)
+        {
+            if(age<0||age>150)
+            {
+                throw MyOut_of("年龄越界");//out_of_range是标准异常类
+            }
+            this->age=age;
+        }
+    int age;
+};
+void test()
+{
+    try{
+        Maker m(300);
+    }
+    catch(MyOut_of &e)//out_of_range是标准异常类
+    {
+        cout<<e.what()<<endl;//what()是异常类的成员函数，返回异常信息
+    }
+}
+int main()
+{
+    test();
+    return 0;
+}
